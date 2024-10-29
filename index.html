@@ -1,60 +1,138 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Monster's Suplementos</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
     <header>
-        <figure>
-            <img class="logo" src="assets/Logo.png" alt="logo">
-        </figure>
-        <nav>
-            <form action="">
-                <input type="text" name="" id="" placeholder="Pesquisar...">
-                <button><img class="img-button" src="assets/lupa.png" alt=""></button>
-            </form>
-            <ul>
-                <a href="index.html">Home</a>
-                <a href="creatina.html">Creatina</a>
-                <a href="whey.html">Whey</a>
-                <a href="pre_treino.html">Pré-Treino</a>
-                <a href="coqueteleira.html">Coqueteleira</a>
-                <a href="#contato">Contato</a>
-            </ul>
-        </nav>
+      <figure>
+        <img class="logo" src="assets/Logo.png" alt="logo" />
+      </figure>
+      <nav>
+        <form action="" onsubmit="return false">
+          <input
+            type="text"
+            name=""
+            id="campo-pesquisa"
+            placeholder="Pesquisar..."
+          />
+          <button>
+            <img
+              onclick="pesquisar()"
+              class="img-button"
+              src="assets/lupa.png"
+              alt=""
+            />
+          </button>
+        </form>
+        <ul>
+          <a href="index.html">Home</a>
+          <a href="creatina.html">Creatina</a>
+          <a href="whey.html">Whey</a>
+          <a href="pre_treino.html">Pré-Treino</a>
+          <a href="coqueteleira.html">Coqueteleira</a>
+          <a href="#contato">Contato</a>
+        </ul>
+      </nav>
     </header>
     <main>
-        <img class="img-promocao" src="https://lojamaxtitanium.vtexassets.com/assets/vtex.file-manager-graphql/images/c937d0b6-d1a1-49db-903d-250774c163c8___c2761a5e007500827f8680694a940b6f.jpg" alt="promocao">
-        <section class="sobre__nos">
-            <img class="img-sobre-nos" src="assets/sobre-nos.png" alt="sobre-nos">
-            <div class="div-sobre-nos">
-                <h2>Sobre nós</h2>
-                <br>
-                <p class="p__sobre">
-                    Monsters Suplementos - Monstruosamente Forte em Nutrição Esportiva
-                    <br><br>
-                    Com mais de 40 anos de história, a Monsters Suplementos se consolidou como uma referência pioneira em suplementação esportiva no Brasil. Desde o nosso primeiro passo, nosso compromisso tem sido a inovação constante e a excelência em produção e pesquisa, colocando a saúde e o desempenho dos nossos clientes em primeiro lugar. Hoje, somos uma equipe de mais de 620 pessoas apaixonadas por nutrição esportiva, trabalhando diariamente para oferecer o que há de mais avançado e tecnológico no mercado.
-                </p>
-            </div>
-        </section>
+      <img
+        class="img-promocao"
+        src="https://lojamaxtitanium.vtexassets.com/assets/vtex.file-manager-graphql/images/c937d0b6-d1a1-49db-903d-250774c163c8___c2761a5e007500827f8680694a940b6f.jpg"
+        alt="promocao"
+      />
+
+      <section id="resultado-pesquisa" class="resultado-pesquisa">
+        <figure class="figure-resultado">
+          <img
+            class="img-produtos"
+            src="https://lojamaxtitanium.vtexassets.com/arquivos/ids/157350/100-whey-protein-max-titanium-dr-peanut-900g-avela-1.jpg?v=638343752603430000"
+            alt=""
+          />
+          <figcaption class="figcaption-resultado">
+            100% Whey Max Titanium x Dr. Peanut (900g), Sabor Avelã
+            <p class="p-precos">R$ 130,32</p>
+          </figcaption>
+        </figure>
+        <figure class="figure-resultado">
+          <img
+            class="img-produtos"
+            src="https://acdn.mitiendanube.com/stores/001/354/536/products/1_1401470_469432471-d2cc1b4e790681528c16997478371852-640-0.jpeg"
+            alt=""
+          />
+          <figcaption class="figcaption-resultado">
+            Creatine Monohydrate 300g - Universal Nutrition
+            <p class="p-precos">R$ 97,99</p>
+          </figcaption>
+        </figure>
+        <figure class="figure-resultado">
+          <img
+            class="img-produtos"
+            src="https://images.tcdn.com.br/img/img_prod/680232/pre_treino_power_nuclear_rush_100g_sabor_guarana_bodyaction_1559_1_8aaa0b20075a1d382e8cc37ffcf88fc7.jpg"
+            alt=""
+          />
+          <figcaption class="figcaption-resultado">
+            Pó Pré-treino Nuclear Rush 100g Em Pó Com Sabor De Morango
+            <p class="p-precos">R$ 47,33</p>
+          </figcaption>
+        </figure>
+        <figure class="figure-resultado">
+          <img
+            class="img-produtos"
+            src="https://images.tcdn.com.br/img/img_prod/1084836/90_coqueteleira_slim_x_pro_blindagem_suplementos_1727_1_808804eee94b3db17e9b85e3c1d99745.jpg"
+            alt=""
+          />
+          <figcaption class="figcaption-resultado">
+            Coqueteleira Slim X Pro - Blindagem Suplementos
+            <p class="p-precos">R$ 69,90</p>
+          </figcaption>
+        </figure>
+        <figure class="figure-resultado">
+          <img
+            class="img-produtos"
+            src="https://www.jacaresuplementos.com/media/product/8c8/creatina-powder-max-300g-pro-size-nutrition-pro-size-nutrition-c40.jpg"
+            alt=""
+          />
+          <figcaption class="figcaption-resultado">
+            Creatina Powder Max (300g) - Pro Size Nutrition
+            <p class="p-precos">R$ 107,45</p>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="sobre__nos">
+        <img class="img-sobre-nos" src="assets/sobre-nos.png" alt="sobre-nos" />
+        <div class="div-sobre-nos">
+          <h2>Sobre nós</h2>
+          <br />
+          <p class="p__sobre">
+            Monsters Suplementos - Monstruosamente Forte em Nutrição Esportiva
+            <br /><br />
+            Com mais de 40 anos de história, a Monsters Suplementos se
+            consolidou como uma referência pioneira em suplementação esportiva
+            no Brasil. Desde o nosso primeiro passo, nosso compromisso tem sido
+            a inovação constante e a excelência em produção e pesquisa,
+            colocando a saúde e o desempenho dos nossos clientes em primeiro
+            lugar. Hoje, somos uma equipe de mais de 620 pessoas apaixonadas por
+            nutrição esportiva, trabalhando diariamente para oferecer o que há
+            de mais avançado e tecnológico no mercado.
+          </p>
+        </div>
+      </section>
     </main>
     <footer id="contato">
-        <p>
-            &copy; Monsters Suplementos 2024, Todos direitos reservados.
-        </p>
-        <p>
-            Email: marcelofragas@gmail.com
-        </p>
-        <p>
-            Tel: (71) 99215-2732
-        </p>
+      <p>&copy; Monsters Suplementos 2024, Todos direitos reservados.</p>
+      <p>Email: marcelofragas@gmail.com</p>
+      <p>Tel: (71) 99215-2732</p>
     </footer>
     <section class="img-footer">
-        <img class="pagamentos" src="assets/formas de pagamento.png" alt="">
+      <img class="pagamentos" src="assets/formas de pagamento.png" alt="" />
     </section>
-</body>
+    <script src="biblioteca.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
