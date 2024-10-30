@@ -11,9 +11,10 @@ let dados = [
     preco: "R$ 199,90",
   },
   {
-    img: "",
-    produto: "Creatina Monohidratada 120 Caps - New Millen Sabor Sem Sabor",
-    preco: "R$ 60,42",
+    img: "https://nutrye.com.br/wp-content/uploads/2023/08/creatina-nutrytech-monohidratada-300g-300x300.jpg",
+    produto:
+      "Combo Força Max: Creatina PURA (Monohidratada 300g) + Burst Caffein (Cafeína + Cromo + Taurina)",
+    preco: "R$ 169,65",
   },
   {
     img: "https://a-static.mlcdn.com.br/450x450/creatina-pura-100-monohidratada-250g-vitamina-d-2000ui-em-gotas20ml-denavita/lojadominshop/e44e548ef5b911edabc64201ac185049/8f66ac3a9cf4c032e9ab58d93a72b843.jpeg",
