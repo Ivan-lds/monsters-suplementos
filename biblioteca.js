@@ -3,6 +3,7 @@ let dados = [
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaJTfH7PW1DhWVD4ECX6YtEDwrby900un-TA&s",
     produto: "Creatina 300g - Probiótica Monohidratada",
     preco: "R$ 97,40",
+    url: "https://www.probiotica.com.br/creatina",
   },
   {
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3PiPB486MRdlx2rz5gOuJMH511wMphDZadQ&s",

@@ -1,170 +1,215 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wheys</title>
-    <link rel="stylesheet" href="produtos.css" />
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-  </head>
-  <body>
-    <header>
-      <figure>
-        <img class="logo" src="assets/Logo.png" alt="logo" />
-      </figure>
-      <nav>
-        <form action="">
-          <input type="text" name="" id="" placeholder="Pesquisar..." />
-          <button>
-            <img class="img-button" src="assets/lupa.png" alt="" />
-          </button>
-        </form>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Whey Protein | Monster's Suplementos</title>
+  <link rel="stylesheet" href="produtos.css" />
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav-container">
+        <div class="header-container">
+          <figure>
+            <img class="logo" src="assets/Logo.png" alt="Monster's Suplementos" />
+          </figure>
+        </div>
         <ul>
-          <a href="index.html">Home</a>
-          <a href="creatina.html">Creatina</a>
-          <a href="whey.html">Whey</a>
-          <a href="pre_treino.html">Pré-Treino</a>
-          <a href="coqueteleira.html">Coqueteleira</a>
-          <a href="#contato">Contato</a>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="creatina.html">Creatina</a></li>
+          <li><a href="whey.html">Whey</a></li>
+          <li><a href="pre_treino.html">Pré-Treino</a></li>
+          <li><a href="coqueteleira.html">Coqueteleira</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="produtos">
-        <figure>
-          <img
-            class="img-produtos"
-            src="https://m.media-amazon.com/images/I/41Fx8sEhd9L._SR600%2C315_PIWhiteStrip%2CBottomLeft%2C0%2C35_SCLZZZZZZZ_FMpng_BG255%2C255%2C255.jpg"
-            alt=""
-          />
-          <figcaption>
-            Whey Protein 1,820 Kg - Masterway - Sabor Chocolate/Baunilha
+        <div class="nav-top">
+          <form action="" onsubmit="return false">
+            <input type="text" name="" id="campo-pesquisa" placeholder="O que você está procurando?" />
+            <button>
+              <img onclick="pesquisar()" class="img-button" src="assets/lupa.png" alt="Pesquisar" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h2 class="section-title">Whey Protein</h2>
+    <p class="section-description">Os melhores suplementos proteicos para ganho de massa muscular</p>
+
+    <section class="produtos">
+      <figure>
+        <img class="img-produtos"
+          src="https://m.media-amazon.com/images/I/41Fx8sEhd9L._SR600%2C315_PIWhiteStrip%2CBottomLeft%2C0%2C35_SCLZZZZZZZ_FMpng_BG255%2C255%2C255.jpg"
+          alt="Whey Protein Masterway" />
+        <figcaption>
+          Whey Protein 1,820 Kg - Masterway - Sabor Chocolate/Baunilha
+          <div class="produto-footer">
             <p class="p-precos">R$ 240,10</p>
-          </figcaption>
-        </figure>
+            <a href="https://www.masterwaysuplementos.com.br/whey-protein" target="_blank" class="btn-comprar"><i
+                class="fas fa-shopping-cart"></i> Comprar</a>
+          </div>
+        </figcaption>
+      </figure>
 
-        <figure>
-          <img
-            class="img-produtos"
-            src="https://down-br.img.susercontent.com/file/72040cfc9155b0ec8bb76fc2ec3173cd"
-            alt=""
-          />
-          <figcaption>
-            Whey Protein 90% Isolado 1kg Original - Growth Supplements
-            (Chocolate)
+      <figure>
+        <img class="img-produtos" src="https://down-br.img.susercontent.com/file/72040cfc9155b0ec8bb76fc2ec3173cd"
+          alt="Whey Protein Growth" />
+        <figcaption>
+          Whey Protein 90% Isolado 1kg Original - Growth Supplements
+          (Chocolate)
+          <div class="produto-footer">
             <p class="p-precos">R$ 174,10</p>
-          </figcaption>
-        </figure>
+            <a href="https://www.gsuplementos.com.br/whey-protein" target="_blank" class="btn-comprar"><i
+                class="fas fa-shopping-cart"></i> Comprar</a>
+          </div>
+        </figcaption>
+      </figure>
 
-        <figure>
-          <img
-            class="img-produtos"
-            src="https://www.masterwaysuplementos.com.br/image/cachewebp/catalog/fotos-seo/whey-protein-isolado-910g-sabor-chocolate-masterway-suplementos-200x200.webp"
-            alt=""
-          />
-          <figcaption>
-            Masterway Suplementos - Whey Protein Isolado - 910g (Chocolate)
+      <figure>
+        <img class="img-produtos"
+          src="https://www.masterwaysuplementos.com.br/image/cachewebp/catalog/fotos-seo/whey-protein-isolado-910g-sabor-chocolate-masterway-suplementos-200x200.webp"
+          alt="Whey Protein Isolado Masterway" />
+        <figcaption>
+          Masterway Suplementos - Whey Protein Isolado - 910g (Chocolate)
+          <div class="produto-footer">
             <p class="p-precos">R$ 149,90</p>
-          </figcaption>
-        </figure>
+            <a href="https://www.masterwaysuplementos.com.br/whey-protein-isolado" target="_blank"
+              class="btn-comprar"><i class="fas fa-shopping-cart"></i> Comprar</a>
+          </div>
+        </figcaption>
+      </figure>
 
-        <figure>
-          <img
-            class="img-produtos"
-            src="https://cdn.awsli.com.br/300x300/395/395149/produto/239928541/nutri-whey-pote-17mdgiu9sy.jpg"
-            alt=""
-          />
-          <figcaption>
-            Nutri Whey Protein 907g Integralmedica
-            <p class="p-precos">R$ 82,94</p>
-          </figcaption>
-        </figure>
+      <figure>
+        <img class="img-produtos"
+          src="https://cdn.awsli.com.br/300x300/395/395149/produto/239928541/nutri-whey-pote-17mdgiu9sy.jpg"
+          alt="Nutri Whey Protein" />
+        <figcaption>
+          Nutri Whey Protein 907g Integralmedica
+          <div class="produto-footer">
+            <p class="p-precos">R$ 240,10</p>
+            <a href="https://www.masterwaysuplementos.com.br/whey-protein" target="_blank" class="btn-comprar"><i
+                class="fas fa-shopping-cart"></i> Comprar</a>
+          </div>
+        </figcaption>
+      </figure>
 
-        <figure>
-          <img
-            class="img-produtos"
-            src="https://cdn.awsli.com.br/300x300/2404/2404599/produto/252433497742a0e8fb1.jpg"
-            alt=""
-          />
-          <figcaption>
-            Whey Protein 100% Dark Lab Chocolate 900g - Dark Lab
-            <p class="p-precos">R$ 126,90</p>
-          </figcaption>
-        </figure>
-      </section>
+      <figure>
+        <img class="img-produtos" src="https://cdn.awsli.com.br/300x300/2404/2404599/produto/252433497742a0e8fb1.jpg"
+          alt="Whey Protein Dark Lab" />
+        <figcaption>
+          Whey Protein 100% Dark Lab Chocolate 900g - Dark Lab
+          <div class="produto-footer">
+            <p class="p-precos">R$ 240,10</p>
+            <a href="https://www.masterwaysuplementos.com.br/whey-protein" target="_blank" class="btn-comprar"><i
+                class="fas fa-shopping-cart"></i> Comprar</a>
+          </div>
+        </figcaption>
+      </figure>
+</section>
 
-      <section class="produtos">
-        <figure>
-          <img
-            class="img-produtos"
-            src="https://www.gsuplementos.com.br/upload/produto/imagem/top-whey-protein-concentrado-1kg-growth-supplements-19.webp"
-            alt=""
-          />
-          <figcaption>
-            Whey Protein Growth, Proteína do Soro do Leite Pura
-            <p class="p-precos">R$ 108,00</p>
-          </figcaption>
-        </figure>
+<section class="produtos">
+      <figure>
+        <img class="img-produtos"
+          src="https://www.gsuplementos.com.br/upload/produto/imagem/top-whey-protein-concentrado-1kg-growth-supplements-19.webp"
+          alt="Whey Protein Growth" />
+        <figcaption>
+          Whey Protein Growth, Proteína do Soro do Leite Pura
+          <div class="produto-footer">
+            <p class="p-precos">R$ 240,10</p>
+            <a href="https://www.masterwaysuplementos.com.br/whey-protein" target="_blank" class="btn-comprar"><i
+                class="fas fa-shopping-cart"></i> Comprar</a>
+          </div>
+        </figcaption>
+      </figure>
 
-        <figure>
-          <img
-            class="img-produtos"
-            src="https://lojamaxtitanium.vtexassets.com/arquivos/ids/157350/100-whey-protein-max-titanium-dr-peanut-900g-avela-1.jpg?v=638343752603430000"
-            alt=""
-          />
-          <figcaption>
-            100% Whey Max Titanium x Dr. Peanut (900g), Sabor Avelã
-            <p class="p-precos">R$ 130,32</p>
-          </figcaption>
-        </figure>
+      <figure>
+        <img class="img-produtos"
+          src="https://lojamaxtitanium.vtexassets.com/arquivos/ids/157350/100-whey-protein-max-titanium-dr-peanut-900g-avela-1.jpg?v=638343752603430000"
+          alt="Whey Max Titanium" />
+        <figcaption>
+          100% Whey Max Titanium x Dr. Peanut (900g), Sabor Avelã
+          <div class="produto-footer">
+            <p class="p-precos">R$ 240,10</p>
+            <a href="https://www.masterwaysuplementos.com.br/whey-protein" target="_blank" class="btn-comprar"><i
+                class="fas fa-shopping-cart"></i> Comprar</a>
+          </div>
+        </figcaption>
+      </figure>
 
-        <figure>
-          <img
-            style="background-color: white"
-            class="img-produtos"
-            src="https://images.tcdn.com.br/img/img_prod/677409/100_whey_protein_leite_900g_1967_1_b859418befbc2b23208d5af8bdde17db.png"
-            alt=""
-          />
-          <figcaption>
-            100% Whey protein- chocolate -900gFTW
-            <p class="p-precos">R$ 121,60</p>
-          </figcaption>
-        </figure>
+      <figure>
+        <img class="img-produtos"
+          src="https://images.tcdn.com.br/img/img_prod/677409/100_whey_protein_leite_900g_1967_1_b859418befbc2b23208d5af8bdde17db.png"
+          alt="Whey Protein FTW" />
+        <figcaption>
+          100% Whey protein- chocolate -900gFTW
+          <div class="produto-footer">
+            <p class="p-precos">R$ 240,10</p>
+            <a href="https://www.masterwaysuplementos.com.br/whey-protein" target="_blank" class="btn-comprar"><i
+                class="fas fa-shopping-cart"></i> Comprar</a>
+          </div>
+        </figcaption>
+      </figure>
 
-        <figure>
-          <img
-            class="img-produtos"
-            src="https://d8vlg9z1oftyc.cloudfront.net/ailos/image/product/45fb901af2fea66919896d219f177a4920220707155848/original/100-whey-gold-standard-900g-baunilha-optimum-nutrition_2971.png"
-            alt=""
-          />
-          <figcaption>
-            Optimum Nutrition Gold Standard 100% Whey protein Powder
-            <p class="p-precos">R$ 669,50</p>
-          </figcaption>
-        </figure>
+      <figure>
+        <img class="img-produtos"
+          src="https://d8vlg9z1oftyc.cloudfront.net/ailos/image/product/45fb901af2fea66919896d219f177a4920220707155848/original/100-whey-gold-standard-900g-baunilha-optimum-nutrition_2971.png"
+          alt="Optimum Nutrition Gold Standard" />
+        <figcaption>
+          Optimum Nutrition Gold Standard 100% Whey protein Powder
+          <div class="produto-footer">
+            <p class="p-precos">R$ 240,10</p>
+            <a href="https://www.masterwaysuplementos.com.br/whey-protein" target="_blank" class="btn-comprar"><i
+                class="fas fa-shopping-cart"></i> Comprar</a>
+          </div>
+        </figcaption>
+      </figure>
 
-        <figure>
-          <img
-            class="img-produtos"
-            src="https://images.tcdn.com.br/img/img_prod/748920/whey_protein_concentrado_refil_1kg_pro_healthy_127_1_8aaca28150ceedd332f59dcfdfc968b2.jpg"
-            alt=""
-          />
-          <figcaption>
-            Whey Protein Concentrado -Refil 1Kg- Pro Healthy
-            <p class="p-precos">R$ 44,99</p>
-          </figcaption>
-        </figure>
-      </section>
-    </main>
-    <footer id="contato">
-      <p>&copy; Monsters Suplementos 2024, Todos direitos reservados.</p>
-      <p>Email: marcelofragas@gmail.com</p>
-      <p>Tel: (71) 99215-2732</p>
-    </footer>
-    <section class="img-footer">
-      <img class="pagamentos" src="assets/formas de pagamento.png" alt="" />
+      <figure>
+        <img class="img-produtos"
+          src="https://images.tcdn.com.br/img/img_prod/748920/whey_protein_concentrado_refil_1kg_pro_healthy_127_1_8aaca28150ceedd332f59dcfdfc968b2.jpg"
+          alt="Whey Protein Pro Healthy" />
+        <figcaption>
+          Whey Protein Concentrado -Refil 1Kg- Pro Healthy
+          <div class="produto-footer">
+            <p class="p-precos">R$ 240,10</p>
+            <a href="https://www.masterwaysuplementos.com.br/whey-protein" target="_blank" class="btn-comprar"><i
+                class="fas fa-shopping-cart"></i> Comprar</a>
+          </div>
+        </figcaption>
+      </figure>
     </section>
-    <script src="biblioteca.js"></script>
-    <script src="app.js"></script>
-  </body>
+  </main>
+  <footer id="contato">
+    <div class="footer-content">
+      <div>
+        <h3>Monster's Suplementos</h3>
+        <p>Sua loja de suplementos de confiança desde 1984</p>
+      </div>
+      <div>
+        <p>&copy; Monsters Suplementos 2024, Todos direitos reservados.</p>
+        <p>Email: marcelofragas@gmail.com</p>
+        <p>Tel: (71) 99215-2732</p>
+      </div>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <section class="img-footer">
+    <img class="pagamentos" src="assets/formas de pagamento.png" alt="Formas de pagamento aceitas" />
+  </section>
+  <script src="biblioteca.js"></script>
+  <script src="app.js"></script>
+</body>
+
 </html>
